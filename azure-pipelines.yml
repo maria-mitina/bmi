@@ -33,7 +33,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to:
 $(build.artifactstagingdirectory)'
