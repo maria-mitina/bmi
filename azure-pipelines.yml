@@ -49,3 +49,9 @@ $(build.artifactstagingdirectory)'
     command: publish
     arguments: '--configuration $(BuildConfiguration) --
 output $(build.artifactstagingdirectory)'
+
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+   PathtoPublish: '$(build.artifactstagingdirectory)'
