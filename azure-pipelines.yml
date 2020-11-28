@@ -42,3 +42,10 @@ $(build.artifactstagingdirectory)'
       **\*runsettings
       **\*.csproj
     TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
+  inputs:
+    command: publish
+    arguments: '--configuration $(BuildConfiguration) --
+output $(build.artifactstagingdirectory)'
