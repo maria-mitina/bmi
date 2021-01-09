@@ -38,9 +38,7 @@ steps:
   inputs:
     Contents: |
       **\*.dll 
-      
       **\*runsettings 
-      
       **\*.csproj
     TargetFolder: '$(build.artifactstagingdirectory)'
 
